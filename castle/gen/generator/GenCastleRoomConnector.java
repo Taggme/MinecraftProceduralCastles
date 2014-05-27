@@ -48,8 +48,7 @@ public class GenCastleRoomConnector extends CastleChunk {
 	    			}
 	    			else
 	    			{
-						CastleGen.GenCastleRoom(world, rand, XCoord, YCoord, ZCoord, dirout);
-		    			CastleGen.chunks[floor].addLast(new GenCastleRoomLadder(world, rand, XCoord, YCoord, ZCoord, dirout, spawn + 1, floor));
+	    				rooms = 75;
 	    			}
 	    		}
 	    		else if(rooms < 20){
@@ -74,7 +73,7 @@ public class GenCastleRoomConnector extends CastleChunk {
 	    		}
 	    		else if(rooms < 80){
 					CastleGen.GenCastleRoom(world, rand, XCoord, YCoord, ZCoord, dirout);
-	    			if(floor < CastleGen.CastleHeight)
+	    			if(floor + 1 < CastleGen.CastleHeight)
 	    			{
 		    			CastleGen.chunks[floor + 1].addLast(new GenCastleRoomLadder(world, rand, XCoord, YCoord, ZCoord, dirout, spawn + 1, floor));
 	    			}

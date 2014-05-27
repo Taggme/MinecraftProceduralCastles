@@ -68,7 +68,7 @@ public class GenCastleRoomSplitter extends CastleChunk{
 	    		}
 	    		else if(rooms < 90){
 					CastleGen.GenCastleRoom(world, rand, XCoord, YCoord, ZCoord, dirout);
-	    			if(floor < CastleGen.CastleHeight)
+	    			if(floor + 1 < CastleGen.CastleHeight)
 	    			{
 		    			CastleGen.chunks[floor + 1].addLast(new GenCastleRoomLadder(world, rand, XCoord, YCoord, ZCoord, dirout, spawn + 1, floor));
 	    			}

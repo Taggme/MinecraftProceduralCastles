@@ -40,7 +40,7 @@ public class CastleGen {
 	public static int CastleMinZ;
 	public static int CastleMaxX;
 	public static int CastleMaxZ;
-	public static Deque<CastleChunk> chunks[] = new ArrayDeque[CastleHeight];
+	public static Deque<CastleChunk> chunks[] = new ArrayDeque[CastleHeight ];
 	public static Deque<CastleChunk> finalize = new ArrayDeque();
 
 	public static void GenCastleInit(){
@@ -51,6 +51,12 @@ public class CastleGen {
 	}
 	public static void GenCastleEnterence(World world, Random rand,int chunkX, int chunkZ)
 	{
+    	for(int floors = 0; floors < CastleHeight; floors++)
+    	{
+    		chunks[floors].clear();
+    	}
+		finalize.clear();
+		
     	int XCoord = chunkX + (rand.nextInt() % 2) * 8;
     	int YCoord = 185;
     	int ZCoord = chunkZ + (rand.nextInt() % 2) * 8;
