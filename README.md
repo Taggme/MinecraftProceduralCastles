@@ -6,7 +6,7 @@ Castle Generator is a three dimensional procedural generator using Minecraft as 
 ![Outside of generated structure](img/Sample1.png?raw=true)
 
 
-This compartamental design allows for easy creation of new rooms to extend the behavior of the generator. All that the rooms require is code to generate doors, spawn nearby rooms, and a finisher function that performs post generation cleanup and decorations. As different types of rooms are created the emergent structure becomes vastly more complex than the sum of its parts leading to interesting layouts that vary wildly from generation to generation. 
+This compartamental design allows for easy creation of new rooms to extend the behavior of the generator. All that the rooms require is code to generate doors, spawn nearby rooms, and a finisher function that performs post generation cleanup and decorations. As different types of rooms are created the emergent structure becomes vastly more complex than the sum of its parts leading to interesting layouts that vary wildly from generation to generation.
 
 ![Inside of generated structure](img/Sample2.png?raw=true)
 
